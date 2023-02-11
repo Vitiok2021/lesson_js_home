@@ -84,7 +84,7 @@ function myRes4() {
     let pdv = allCost * 0.05;
     document.querySelector('.out4').innerHTML = `
        1) Загальна вартість товару = ${allCost}<br>
-       2) Вартість ПДВ = ${pdv}<br>
+       2) Вартість ПДВ = ${pdv.toFixed(2)}<br>
     `;
 }
 
