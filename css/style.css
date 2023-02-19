@@ -1,27 +1,28 @@
 /* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+@import url(reset.css);
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	border: none;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
 }
 li {
-	list-style: none;
+  list-style: none;
 }
 a {
-	color: inherit;
+  color: inherit;
 }
 a:link,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
-img{
-	vertical-align: top;
+img {
+  vertical-align: top;
 }
 h1,
 h2,
@@ -29,20 +30,48 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 input,
 button,
 textarea {
-	font-family: inherit;
-	font-size: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }
 button {
-	cursor: pointer;
-	color: inherit;
-	background-color: inherit;
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+}
+[class*="__container"] {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  padding: 2rem;
+}
+.wrapper > main {
+  flex: 1 1 auto;
+}
+a,
+li {
+  padding: 0.7rem;
+  color: #5c5c5c;
+  font-size: 1.5rem;
+}
+a {
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  border-bottom: 2px solid transparent;
+}
+a:hover {
+  transition: all 0.5s ease 0s;
+  color: #603588;
+  border-bottom: 2px solid #603588;
 }

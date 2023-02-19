@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson_3</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <div class="page__container">
+          <ul>
+            <li>
+              <h2>Задача 1</h2>
+              <div>
+                <p>
+                  З клавіатури вводяться імена двох дітей та кількість у них
+                  цукерок. Вивести не екран ім’я тієї дитини, у якої кількість
+                  цукерок є більшою, або вивести, що кількість однакова.
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="first-name"
+                  name="first-name"
+                  placeholder="Введіть ім’я першої дитини:"
+                />
+                <input
+                  type="text"
+                  class="second-name"
+                  name="second-name"
+                  placeholder="Введіть ім’я другої дитини:"
+                />
+                <input
+                  type="text"
+                  class="first-child-candy"
+                  name="first-child-candy"
+                  placeholder="Введіть кількість цукерок першої дитини:"
+                />
+                <input
+                  type="text"
+                  class="second-child-candy"
+                  name="second-child-candy"
+                  placeholder="Введіть кількість цукерок другої дитини:"
+                />
+                <button type="button" class="form__button">Calc</button>
+              </form>
+              <div class="out"></div>
+            </li>
+
+            <li>
+              <h2>Задача 2</h2>
+              <div>
+                <p>
+                  З клавіатури вводиться ціна товару і кількість грошей. Якщо
+                  грошей не вистачає то відмовляємо у покупці, інакше, якщо ще
+                  залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="price-goods"
+                  name="price-goods"
+                  placeholder="Введіть ціну товару:"
+                />
+                <input
+                  type="text"
+                  class="count-money"
+                  name="count-money"
+                  placeholder="Введіть кількість грошей:"
+                />
+                <button type="button" class="form__button-2">Calc</button>
+              </form>
+              <div class="out-2"></div>
+            </li>
+
+            <li>
+              <h2>Задача 3</h2>
+              <div>
+                <p>
+                  Випадковим чином генерується число від 1 до 5. Спробуйте
+                  вгадати число за 2 спроби.
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <!-- <input
+                  type="text"
+                  class="num1"
+                  name="num1"
+                  placeholder="Введіть число 1:"
+                /> -->
+                <button type="button" class="form__button-3">Calc</button>
+              </form>
+              <div class="out-3">Виправте, будь ласка, помилку</div>
+            </li>
+
+            <li>
+              <h2>Задача 4</h2>
+              <div>
+                <p>
+                  З клавіатури вводиться вік людини. Вивести на екран ким він є
+                  (дитиною у садочку, школярем, студентом, працівником,
+                  пенсіонером).
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="year"
+                  name="year"
+                  placeholder="Введіть вік:"
+                />
+
+                <button type="button" class="form__button-4">Calc</button>
+              </form>
+              <div class="out-4"></div>
+            </li>
+
+            <li>
+              <h2>Задача 5</h2>
+              <div>
+                <p>
+                  З клавіатури вводиться назва категорії водія (А-мотоцикл,
+                  В-легковий автомобіль, С-вантажний автомобіль). Вивести на
+                  екран назву транспортного засобу, яким він може керувати.
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="category"
+                  name="category"
+                  placeholder="Введіть категорію водійського посвідчення:"
+                />
+
+                <button type="button" class="form__button-5">Calc</button>
+              </form>
+              <div class="out-5"></div>
+            </li>
+
+            <li>
+              <h2>Задача 6</h2>
+              <div>
+                <p>
+                  З клавіатури вводиться номер дня тижня. Вивести на екран назву
+                  дня.
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="day"
+                  name="day"
+                  placeholder="Введіть номер дня тижня:"
+                />
+
+                <button type="button" class="form__button-6">Calc</button>
+              </form>
+              <div class="out-6"></div>
+            </li>
+
+            <li>
+              <h2>Задача 7</h2>
+              <div>
+                <p>
+                  З клавіатури вводиться номер місяця. Вивести до якої пори він
+                  відноситься
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="mounth"
+                  name="mounth"
+                  placeholder="Введіть номер місяця:"
+                />
+
+                <button type="button" class="form__button-7">Calc</button>
+              </form>
+              <div class="out-7"></div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/lesson_3.js"></script>
+  </body>
+</html>
