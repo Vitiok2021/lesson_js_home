@@ -1,164 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style_2.css" />
     <title>Lesson_2</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <main class="page">
-            <div class="page__container">
-                <ul>
-                    <li>
+      <main class="page">
+        <div class="page__container">
+          <ul>
+            <li>
+              <h2>Задача 0</h2>
+              <div>
+                <p>Обчислити значення виразів</p>
+                <p>S_1=a+12+b</p>
+                <p>S_2=√(((a+b)/2a))</p>
+                <p>S_3=∛((a+b)c)</p>
+                <p>S_4=sin⁡(a/(-b))</p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="num-a"
+                  name="num-a"
+                  placeholder="Введіть число a:"
+                />
+                <input
+                  type="text"
+                  class="num-b"
+                  name="num-b"
+                  placeholder="Введіть число b:"
+                />
+                <input
+                  type="text"
+                  class="num-c"
+                  name="num-c"
+                  placeholder="Введіть число c:"
+                />
+                <button type="button" class="form__button">Calc</button>
+              </form>
+              <div class="out"></div>
+            </li>
 
-                        <h2>Задача 0</h2>
-                        <div>
-                            <p>Обчислити значення виразів</p>
-                            <p>S_1=a+12+b</p>
-                            <p>S_2=√(((a+b)/2a))</p>
-                            <p>S_3=∛((a+b)c)</p>
-                            <p>S_4=sin⁡(a/(-b)) </p>
-                        </div>
-                        <form method="POST" action="#">
-                            <input type="text" class="num-a" name="num-a" placeholder="Введіть число a:">
-                            <input type="text" class="num-b" name="num-b" placeholder="Введіть число b:">
-                            <input type="text" class="num-c" name="num-c" placeholder="Введіть число c:">
-                            <button type="button" class="form__button">Calc</button>
-                        </form>
-                        <div class="out"></div>
+            <li>
+              <h2>Задача 1</h2>
+              <div>
+                <p>
+                  Знайти суму, добуток та частку двох дійсних чисел. Результат
+                  вивести у формі таблиці
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="zad2-a"
+                  name="zad2-a"
+                  placeholder="Введіть число a:"
+                />
+                <input
+                  type="text"
+                  class="zad2-b"
+                  name="zad2-b"
+                  placeholder="Введіть число b:"
+                />
 
-                    </li>
+                <button type="button" class="form__button2">Calc</button>
+              </form>
+              <div class="out2"></div>
+            </li>
 
-                    <li>
-                        <h2>Задача 1</h2>
-                        <div>
-                            <p>
-                                Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
-                            </p>
-                        </div>
-                        <form method="POST" action="#">
-                            <input type="text" class="zad2-a" name="zad2-a" placeholder="Введіть число a:">
-                            <input type="text" class="zad2-b" name="zad2-b" placeholder="Введіть число b:">
+            <li>
+              <h2>Задача 2</h2>
+              <div>
+                <p>
+                  Дано рік народження (дата: 1 січня) та поточний рік. Знайти
+                  кількість років.
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="year-01"
+                  name="year-01"
+                  placeholder="Введіть рік народження:"
+                />
+                <!-- <input type="text" class="year-02" name="year-02" placeholder="Введіть який зараз рік"> -->
 
-                            <button type="button" class="form__button2">Calc</button>
-                        </form>
-                        <div class="out2"></div>
-                    </li>
+                <button type="button" class="form__button3">Calc</button>
+              </form>
+              <div class="out3"></div>
+            </li>
 
-                    <li>
-                        <h2>Задача 2</h2>
-                        <div>
-                            <p>
-                                Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.
-                            </p>
-                        </div>
-                        <form method="POST" action="#">
-                            <input type="text" class="year-01" name="year-01" placeholder="Введіть рік народження:">
-                            <!-- <input type="text" class="year-02" name="year-02" placeholder="Введіть який зараз рік"> -->
+            <li>
+              <h2>Задача 3</h2>
+              <div>
+                <p>
+                  Дано вартість одиниці товару і кількість. Знайти загальну
+                  вартість та ПДВ (5% від загальної вартості).
+                </p>
+              </div>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="cost"
+                  name="cost"
+                  placeholder="Введіть вартість товару:"
+                />
+                <input
+                  type="text"
+                  class="quant"
+                  name="quant"
+                  placeholder="Введіть кількість товару:"
+                />
 
-                            <button type="button" class="form__button3">Calc</button>
-                        </form>
-                        <div class="out3"></div>
-                    </li>
+                <button type="button" class="form__button4">Calc</button>
+              </form>
+              <div class="out4"></div>
+            </li>
 
-                    <li>
-                        <h2>Задача 3</h2>
-                        <div>
-                            <p>
-                                Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від
-                                загальної вартості). </p>
-                        </div>
-                        <form method="POST" action="#">
-                            <input type="text" class="cost" name="cost" placeholder="Введіть вартість товару:">
-                            <input type="text" class="quant" name="quant" placeholder="Введіть кількість товару:">
+            <li>
+              <h2>Задача 4</h2>
+              <div>
+                <p>
+                  Дано довжину у сантиметрах. Визначати скільки це метрів і
+                  кілометрів.
+                </p>
+              </div>
 
-                            <button type="button" class="form__button4">Calc</button>
-                        </form>
-                        <div class="out4"></div>
-                    </li>
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="centimeter"
+                  name="centimeter"
+                  placeholder="Введіть сантиметри:"
+                />
 
-                    <li>
-                        <h2>Задача 4</h2>
-                        <div>
-                            <p>
-                                Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
-                        </div>
-                        <form method="POST" action="#">
-                            <input type="text" class="centimeter" name="centimeter" placeholder="Введіть сантиметри:">
+                <button type="button" class="form__button5">Calc</button>
+              </form>
+              <div class="out5"></div>
+            </li>
 
-                            <button type="button" class="form__button5">Calc</button>
-                        </form>
-                        <div class="out5"></div>
-                    </li>
+            <li>
+              <h2>Задача 5</h2>
+              <div>
+                <p>
+                  Дано кількість секунд, що пройшла від початку доби. Визначити
+                  скільки це годин і хвилин
+                </p>
+              </div>
 
-                    <li>
-                        <h2>Задача 5</h2>
-                        <div>
-                            <p>
-                                Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин
-                        </div>
-                        <form method="POST" action="#">
-                            <input type="text" class="sec" name="sec" placeholder="Введіть кількість секунд:">
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="sec"
+                  name="sec"
+                  placeholder="Введіть кількість секунд:"
+                />
 
-                            <button type="button" class="form__button6">Calc</button>
-                        </form>
-                        <div class="out6"></div>
-                    </li>
+                <button type="button" class="form__button6">Calc</button>
+              </form>
+              <div class="out6"></div>
+            </li>
 
-                    <li>
-                        <h2>Задача 6</h2>
-                        <div>
-                            <p>
-                                З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити
-                                вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті)
-                                використовуючи елементи розмітки.
-                        </div>
-                        <form method="POST" action="#">
-                            <input type="text" class="cost-01" name="cost-01"
-                                placeholder="Введіть вартість першого товару:">
-                            <input type="text" class="quant-01" name="num-01"
-                                placeholder="Введіть кількість першого товару:">
+            <li>
+              <h2>Задача 6</h2>
+              <div>
+                <p>
+                  З клавіатури вводяться вартість товару та кількість одиниць 3
+                  товарів. Обчислити вартість кожного товару окремо та загальну
+                  вартість. Вивести чек (як у супермаркеті) використовуючи
+                  елементи розмітки.
+                </p>
+              </div>
 
-                            <input type="text" class="cost-02" name="cost-02"
-                                placeholder="Введіть вартість другого товару:">
-                            <input type="text" class="quant-02" name="num-02"
-                                placeholder="Введіть кількість другого товару:">
+              <form method="POST" action="#">
+                <input
+                  type="text"
+                  class="cost-01"
+                  name="cost-01"
+                  placeholder="Введіть вартість першого товару:"
+                />
+                <input
+                  type="text"
+                  class="quant-01"
+                  name="num-01"
+                  placeholder="Введіть кількість першого товару:"
+                />
 
-                            <input type="text" class="cost-03" name="cost-03"
-                                placeholder="Введіть вартість третього товару:">
-                            <input type="text" class="quant-03" name="num-03"
-                                placeholder="Введіть кількість третього товару:">
+                <input
+                  type="text"
+                  class="cost-02"
+                  name="cost-02"
+                  placeholder="Введіть вартість другого товару:"
+                />
+                <input
+                  type="text"
+                  class="quant-02"
+                  name="num-02"
+                  placeholder="Введіть кількість другого товару:"
+                />
 
-                            <button type="button" class="form__button7">Calc</button>
-                        </form>
-                        <div class="out7"></div>
-                    </li>
+                <input
+                  type="text"
+                  class="cost-03"
+                  name="cost-03"
+                  placeholder="Введіть вартість третього товару:"
+                />
+                <input
+                  type="text"
+                  class="quant-03"
+                  name="num-03"
+                  placeholder="Введіть кількість третього товару:"
+                />
 
-                    <li>
-                        <h2>Задача 7</h2>
-                        <div>
-                            <p>
-                                Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до
-                                6).
-                            </p>
-                        </div>
+                <button type="button" class="form__button7">Calc</button>
+              </form>
+              <div class="out7"></div>
+            </li>
 
-                        <button type="button" class="form__button8">Calc</button>
+            <li>
+              <h2>Задача 7</h2>
+              <div>
+                <p>
+                  Знайти суму випадкового номера місяця (від 1 до 12) та
+                  випадкового номера дня (від 0 до 6).
+                </p>
+              </div>
 
-                        <div class="out8"></div>
-                    </li>
+              <button type="button" class="form__button8">Calc</button>
 
-                </ul>
-            </div>
-        </main>
+              <div class="out8"></div>
+            </li>
+          </ul>
+        </div>
+      </main>
     </div>
 
     <script src="js/lesson_2.js"></script>
-</body>
-
+  </body>
 </html>

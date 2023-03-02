@@ -1,0 +1,13 @@
+@import url("reset.css");
+@import url("../../lesson_2/css/style.css");
+
+.wrapper {
+  background-color: rgb(238, 238, 238);
+  padding: 1rem 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.out-3 {
+  font-weight: bold;
+  font-size: 2rem;
+}

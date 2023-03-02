@@ -34,8 +34,7 @@ function myRes2() {
 
   if (countMoney >= priceGoods) {
     console.log(countMoney - priceGoods);
-    if (countMoney - priceGoods >= 4)
-      remainder = "Купіть ще лоторею. //Підкажіть як виправити, коли 7,4-3,5=4";
+    if (countMoney - priceGoods >= 4) remainder = "Купіть ще лоторею!";
     else remainder = "Дякуємо за покупку";
   } else remainder = "У Вас недостатньо коштів";
   document.querySelector(".out-2").innerHTML = remainder;
@@ -88,12 +87,15 @@ function myRes5() {
   let result;
   switch (userCategory) {
     case "A":
+    case "a":
       result = "Ви маєте право керування мотоциклом";
       break;
     case "B":
+    case "b":
       result = "Ви маєте право керування легковим автомобілем";
       break;
     case "C":
+    case "c":
       result = "Ви маєте право керування вантажним автомобілем";
       break;
     default:
