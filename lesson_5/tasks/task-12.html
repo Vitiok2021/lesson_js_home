@@ -18,32 +18,42 @@
     </p>
 
     <script>
-      let img1, img2, img3, img4;
+      let img1 = 0,
+        img2 = 0,
+        img3 = 0,
+        img4 = 0;
       // let position1,position2,position3
 
-      // let sum = 0;
-      // for (let i = 1; i <= 3; i++) {
-      //   let random = 1 + Math.floor(Math.random() * 4);
-      //   console.log(random);
-      //   document.write(`<img src="../img/${random}.png">`);
-      //   sum += random;
-      // }
-      // console.log(sum);
-      // switch (sum) {
-      //   case 3:
-      //     alert("Вітаємо! Ви виграли 100грн");
-      //     break;
-      //   case 6:
-      //     0;
-      //     alert("Вітаємо! Ви виграли 200грн");
-      //     break;
-      //   case 9:
-      //     alert("Вітаємо! Ви виграли 500грн");
-      //     break;
-      //   case 12:
-      //     alert("Вітаємо! Ви виграли 1000грн");
-      //     break;
-      // }
+      for (let i = 0; i < 3; i++) {
+        let random = 1 + Math.floor(Math.random() * 4);
+        console.log(random);
+        switch (random) {
+          case 1:
+            document.write(`<img src="../img/${random}.png">`);
+            img1++;
+            break;
+          case 2:
+            document.write(`<img src="../img/${random}.png">`);
+            img2++;
+            break;
+          case 3:
+            document.write(`<img src="../img/${random}.png">`);
+            img3++;
+            break;
+          case 4:
+            document.write(`<img src="../img/${random}.png">`);
+            img4++;
+            break;
+        }
+      }
+
+      let result;
+      if (img1 === 3) result = 100;
+      else if (img2 === 3) result = 200;
+      else if (img3 === 3) result = 500;
+      else if (img4 === 3) result = 1000;
+      else result = "Спробуйте ще";
+      document.write(result);
     </script>
   </body>
 </html>

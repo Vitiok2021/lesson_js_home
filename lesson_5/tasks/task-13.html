@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 13</title>
+  </head>
+  <body>
+    <h1>Задача 13</h1>
+
+    <p>
+      Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі
+      розміром N*M. Маючи К снарядів користувач намагається потопити корабель.
+    </p>
+
+    <script>
+      //const
+      const N = 5;
+      const M = 5;
+      let K = parseInt(prompt("Введіть кількість пострілів", "3"));
+      const randomN = 1 + Math.floor(Math.random() * 5);
+      const randomM = 1 + Math.floor(Math.random() * 5);
+      for (; K > 0; K--) {
+        const userN = parseInt(prompt("Введіть координату N"));
+        const userM = parseInt(prompt("Введіть координату M"));
+        if (randomN === userN && randomM === userM) alert("Ви вбили корабль");
+        else alert("Мимо");
+      }
+    </script>
+  </body>
+</html>
+
+<!--  
+ //0.Ввід даних
+
+      let userRow = parseInt(prompt("Введіть номер рядка", "0"));
+      console.log(userRow);
+      let userColumn = parseInt(prompt("Введіть номер стовпця", "0"));
+      console.log(userColumn);
+
+      let randomRow = 1 + Math.floor(Math.random() * 2);
+      console.log(randomRow);
+      let randomColumn = 1 + Math.floor(Math.random() * 2);
+      console.log(randomColumn);
+      let sum = 0;
+      // let attempt = 0;
+      //1.Обчислення
+      if (userRow === randomRow && userColumn === randomColumn) sum = 100;
+      else {
+        alert("Ви не вгадали, спробуйте ще");
+        userRow = parseInt(prompt("Введіть номер рядка", "0"));
+        console.log(userRow);
+        userColumn = parseInt(prompt("Введіть номер стовпця", "0"));
+        console.log(userColumn);
+        if (userRow === randomRow && userColumn === randomColumn) sum = 50;
+      }
+      //2.Вивід даних
+      document.write(`Ви заробили ${sum} балів`);-->
