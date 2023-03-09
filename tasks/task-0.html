@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 0</title>
+  </head>
+  <body>
+    <h1>Задача 0</h1>
+
+    <p>
+      Створити функцію, яка за номером місяця повертає пору року, до якої
+      відноситься цей місяць.
+    </p>
+
+    <script>
+      function getSeason(month) {
+        switch (month) {
+          case 12:
+          case 1:
+          case 2:
+            return "Даний місяць зимовий";
+          case 3:
+          case 4:
+          case 5:
+            return "Даний місяць весняний";
+          case 6:
+          case 7:
+          case 8:
+            return "Даний місяць літній";
+          case 9:
+          case 10:
+          case 11:
+            return "Даний місяць осінній";
+          default:
+            return "Ви ввели некоректне значення";
+        }
+      }
+      let mySeason = getSeason(5);
+      document.write(mySeason);
+    </script>
+  </body>
+</html>
