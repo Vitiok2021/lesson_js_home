@@ -1,0 +1,9 @@
+/* @import url("reset.css"); */
+/* @import url("../../css/style.css"); */
+a {
+  color: #000;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: blueviolet;
+}
